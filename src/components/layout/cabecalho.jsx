@@ -1,9 +1,23 @@
 import { Menu } from "../menu";
 
+/* Objeto de estilos CSS */
+const estilos = {
+  color: "white",
+  backgroundColor: "black",
+};
+
 const Cabecalho = () => {
   return (
-    <header>
-      <h1>Interface React</h1>
+    /* CSS IN JS: estilos CSS embutidos no meio do JavaScript */
+    /* Css inline (usa propriedade style e sintaxe de objeto) */
+    <header
+      style={{
+        backgroundColor: "yellow",
+        textAlign: "center",
+        textTransform: "uppercase",
+      }}
+    >
+      <h1 style={estilos}>Interface React</h1>
 
       <Menu />
     </header>
