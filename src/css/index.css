@@ -11,3 +11,7 @@ html {
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+nav a {
+    padding: 1rem;
+}
