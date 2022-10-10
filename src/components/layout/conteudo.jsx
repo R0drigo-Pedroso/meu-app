@@ -20,26 +20,8 @@ const Conteudo = () => {
 
         {/* esse artigo e um components */}
         <Artigo />
-
-        <article>
-          <h3>Titulo...</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-            iusto consequuntur consectetur qui porro numquam quidem tenetur
-            dolores laboriosam voluptatibus eligendi, vero perferendis earum,
-            distinctio magnam, facilis quo corporis! Rem!
-          </p>
-        </article>
-
-        <article>
-          <h3>Titulo...</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-            iusto consequuntur consectetur qui porro numquam quidem tenetur
-            dolores laboriosam voluptatibus eligendi, vero perferendis earum,
-            distinctio magnam, facilis quo corporis! Rem!
-          </p>
-        </article>
+        <Artigo />
+        <Artigo />
       </section>
     </main>
   );
