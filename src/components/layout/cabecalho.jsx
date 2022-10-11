@@ -1,7 +1,7 @@
-import { Menu } from "../menu";
+import Menu from "../Menu";
 
 /* Objeto de estilos CSS */
-const estilos = {
+const Estilos = {
   color: "white",
   backgroundColor: "black",
 };
@@ -17,7 +17,7 @@ const Cabecalho = () => {
         textTransform: "uppercase",
       }}
     >
-      <h1 style={estilos}>Interface React</h1>
+      <h1 style={Estilos}>Interface React</h1>
 
       <Menu />
     </header>
@@ -25,4 +25,4 @@ const Cabecalho = () => {
 };
 
 // export default Cabecalho;
-export { Cabecalho };
+export default Cabecalho;

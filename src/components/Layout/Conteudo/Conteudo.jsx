@@ -1,10 +1,11 @@
-import { Artigo } from "../artigo";
+import Artigo from "../../Artigo";
+import "./Conteudo.css";
 
 const Conteudo = () => {
   return (
     <main>
       <section>
-        <h2>Conteudo do Site</h2>
+        <h2 className="subtitulo">Conteudo do Site</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsam in,
           officia soluta dignissimos nesciunt excepturi numquam voluptatibus a
@@ -28,4 +29,4 @@ const Conteudo = () => {
 };
 
 // export default Conteudo;
-export { Conteudo };
+export default Conteudo;
