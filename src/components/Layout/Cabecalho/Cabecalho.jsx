@@ -1,4 +1,4 @@
-import Menu from "../Menu";
+import Menu from "../Menu/Menu";
 
 /* Objeto de estilos CSS */
 const Estilos = {
@@ -12,7 +12,6 @@ const Cabecalho = () => {
     /* Css inline (usa propriedade style e sintaxe de objeto) */
     <header
       style={{
-        backgroundColor: "yellow",
         textAlign: "center",
         textTransform: "uppercase",
       }}

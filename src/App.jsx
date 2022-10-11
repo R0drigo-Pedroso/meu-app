@@ -1,8 +1,6 @@
-import Cabecalho from "./components/Layout/Cabecalho";
-
-import Rodape from "./components/Layout/Rodape";
-
+import Cabecalho from "./components/Layout/Cabecalho/Cabecalho";
 import Conteudo from "./components/Layout/Conteudo/Conteudo";
+import Rodape from "./components/Layout/Rodape/Rodape";
 
 const App = () => {
   return (
