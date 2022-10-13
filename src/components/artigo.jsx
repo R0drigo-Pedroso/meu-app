@@ -12,4 +12,4 @@ const Artigo = () => {
   );
 };
 
-export { Artigo };
+export default Artigo;

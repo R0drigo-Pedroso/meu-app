@@ -1,4 +1,4 @@
-import { Artigo } from "../artigo";
+import Artigo from "../artigo";
 
 const Conteudo = () => {
   return (
@@ -28,4 +28,4 @@ const Conteudo = () => {
 };
 
 // export default Conteudo;
-export { Conteudo };
+export default Conteudo;
