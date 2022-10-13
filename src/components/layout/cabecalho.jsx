@@ -4,6 +4,7 @@ const Cabecalho = () => {
   const exemplo02 = () => {
     console.log("exemplo02");
   };
+
   return (
     <header>
       <button onClick={() => console.log("exemplo01")}>Exemplo 01</button>
