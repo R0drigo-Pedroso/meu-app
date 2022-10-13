@@ -46,14 +46,10 @@ const Conteudo = () => {
 
         {/* esse artigo e um components */}
 
-        {artigos.map((artigo) => (
-          <Artigo
-            key={artigo.id}
-            titulo={artigo.titulo}
-            subtitulo={artigo.subtitulo}
-            curso={artigo.curso}
-          >
-            {artigo.texto}
+        {/* Aplicando destructuring (desestruturação no objeto) */}
+        {artigos.map(({ id, titulo, subtitulo, curso, texto }) => (
+          <Artigo key={id} titulo={titulo} subtitulo={subtitulo} curso={curso}>
+            {texto}
           </Artigo>
         ))}
       </section>
