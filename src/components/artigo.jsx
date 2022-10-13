@@ -1,15 +1,13 @@
-const Artigo = () => {
+/* Acesso as props usando destructuring de objeto */
+const Artigo = ({ titulo, curso, children, subtitulo }) => {
   return (
     <article>
-      <h3>Titulo...</h3>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid iusto
-        consequuntur consectetur qui porro numquam quidem tenetur dolores
-        laboriosam voluptatibus eligendi, vero perferendis earum, distinctio
-        magnam, facilis quo corporis! Rem!
-      </p>
+      <h3>{titulo}</h3>
+      <h4>{subtitulo}</h4>
+      <p>Curso:{curso}</p>
+      <p>{children}</p>
     </article>
   );
 };
 
-export { Artigo };
+export default Artigo;
