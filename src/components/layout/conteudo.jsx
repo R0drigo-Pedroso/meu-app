@@ -1,18 +1,29 @@
 import Artigo from "../artigo";
 
 const Conteudo = () => {
-  const Curso = [
-    "React.js",
-    "Estilização CSS",
-    "O aprendizado vale super apenas",
+  const artigos = [
+    {
+      titulo: "artigo 01",
+      subtitulo: "Subtitulo do artigo 01",
+      texto:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsam in",
+      curso: "curso 01",
+    },
+    {
+      titulo: "artigo 02",
+      subtitulo: "Subtitulo do artigo 03",
+      texto:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsam in",
+      curso: "curso 02",
+    },
+    {
+      titulo: "artigo 03",
+      subtitulo: "Subtitulo do artigo 03",
+      texto:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsam in",
+      curso: "curso 03",
+    },
   ];
-
-  const Sub = [
-    "Vem aprender React.js",
-    "Deixe seu projeto mais bonito",
-    "valorize seu conhecimento",
-  ];
-
   return (
     <main>
       <section>
@@ -31,33 +42,18 @@ const Conteudo = () => {
         </p>
 
         {/* esse artigo e um components */}
-        <Artigo titulo={Curso[0]} subtitulo={Sub[0]}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            repellat nostrum iusto aspernatur ut suscipit in non rem consectetur
-            nihil quisquam cum inventore molestiae voluptatum impedit hic
-            tenetur consequuntur, fugit eligendi architecto, aliquid modi enim
-            illum id! Perferendis impedit quibusdam, architecto, fugiat officia
-            iste voluptas vitae corporis neque sunt eius cumque voluptatibus
-            repellat. Animi unde accusantium porro, reiciendis iste saepe nobis
-            amet repellendus quis, id, blanditiis non? At, voluptatibus. Quos?
-          </p>
-        </Artigo>
-        <Artigo titulo={Curso[1]} subtitulo={Sub[1]}>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
-            eveniet labore necessitatibus. Rerum officia fugit porro perferendis
-            quisquam ratione, nam vitae. Numquam repellat ratione cum fuga
-            necessitatibus in, reprehenderit ipsa quos. A qui commodi, illo
-            harum sed, magni nisi dolores cumque animi eius eaque voluptatibus.
-          </p>
-        </Artigo>
-        <Artigo titulo={Curso[2]} subtitulo={Sub[2]}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Repudiandae asperiores ducimus debitis corporis culpa omnis.
-          </p>
-        </Artigo>
+
+        {artigos.map((artigo) => {
+          return (
+            <Artigo
+              titulo={artigo.titulo}
+              subtitulo={artigo.subtitulo}
+              curso={artigo.curso}
+            >
+              {artigo.texto}
+            </Artigo>
+          );
+        })}
       </section>
     </main>
   );
