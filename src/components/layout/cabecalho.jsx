@@ -14,6 +14,7 @@ const Cabecalho = () => {
   const atualizaTitulo = () => {
     setTitulo("Opa, state do titulo foi alterado!");
   };
+
   return (
     <header>
       <button onClick={() => console.log("exemplo01")}>Exemplo 01</button>
