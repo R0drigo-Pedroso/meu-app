@@ -1,4 +1,4 @@
-import { Menu } from "../menu";
+import Menu from "../menu";
 
 const Cabecalho = () => {
   return (
@@ -11,4 +11,4 @@ const Cabecalho = () => {
 };
 
 // export default Cabecalho;
-export { Cabecalho };
+export default Cabecalho;

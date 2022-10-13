@@ -7,4 +7,4 @@ const Rodape = () => {
 };
 
 // export default Rodape;
-export { Rodape };
+export default Rodape;
