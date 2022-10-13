@@ -43,17 +43,15 @@ const Conteudo = () => {
 
         {/* esse artigo e um components */}
 
-        {artigos.map((artigo) => {
-          return (
-            <Artigo
-              titulo={artigo.titulo}
-              subtitulo={artigo.subtitulo}
-              curso={artigo.curso}
-            >
-              {artigo.texto}
-            </Artigo>
-          );
-        })}
+        {artigos.map((artigo) => (
+          <Artigo
+            titulo={artigo.titulo}
+            subtitulo={artigo.subtitulo}
+            curso={artigo.curso}
+          >
+            {artigo.texto}
+          </Artigo>
+        ))}
       </section>
     </main>
   );
