@@ -3,6 +3,7 @@ import Artigo from "../artigo";
 const Conteudo = () => {
   const artigos = [
     {
+      id: 1,
       titulo: "artigo 01",
       subtitulo: "Subtitulo do artigo 01",
       texto:
@@ -10,6 +11,7 @@ const Conteudo = () => {
       curso: "curso 01",
     },
     {
+      id: 2,
       titulo: "artigo 02",
       subtitulo: "Subtitulo do artigo 03",
       texto:
@@ -17,6 +19,7 @@ const Conteudo = () => {
       curso: "curso 02",
     },
     {
+      id: 3,
       titulo: "artigo 03",
       subtitulo: "Subtitulo do artigo 03",
       texto:
@@ -45,6 +48,7 @@ const Conteudo = () => {
 
         {artigos.map((artigo) => (
           <Artigo
+            key={artigo.id}
             titulo={artigo.titulo}
             subtitulo={artigo.subtitulo}
             curso={artigo.curso}
