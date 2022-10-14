@@ -1,4 +1,4 @@
-import Artigo from "../components/artigo";
+import Artigo from "../components/Artigo";
 
 const home = () => {
   return (

@@ -1,9 +1,12 @@
+/* Importação para se torna assycrono */
+import { NavLink } from "react-router-dom";
+
 const Menu = () => {
   return (
     <nav>
-      <a href="">Home</a>
-      <a href="">Produto</a>
-      <a href="">Serviço</a>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/produtos">Produto</NavLink>
+      <NavLink to="/servicos">Serviço</NavLink>
     </nav>
   );
 };

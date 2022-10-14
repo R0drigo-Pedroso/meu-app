@@ -1,5 +1,9 @@
-import Cabecalho from "./components/layout/cabecalho";
-import Rodape from "./components/layout/rodape";
+/* Importação react-router-dom */
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+/* Importação components */
+import Cabecalho from "./components/layout/Cabecalho";
+import Rodape from "./components/layout/Rodape";
 
 /* Importação da pages */
 import Home from "./pages/Home";
@@ -9,15 +13,26 @@ import Servicos from "./pages/Servicos";
 const App = () => {
   return (
     <>
-      <Cabecalho />
+      {/* Container */}
+      <BrowserRouter>
+        <Cabecalho />
 
-      <Home />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
 
-      <Produtos />
+          <Route path="/produtos">
+            <Produtos />
+          </Route>
 
-      <Servicos />
+          <Route path="/servicos">
+            <Servicos />
+          </Route>
+        </Switch>
 
-      <Rodape />
+        <Rodape />
+      </BrowserRouter>
     </>
   );
 };
