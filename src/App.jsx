@@ -13,15 +13,18 @@ import Servicos from "./pages/Servicos";
 const App = () => {
   return (
     <>
-      {/* Container */}
+      {/* Container de rotas (precisa envolvover todos componentes do App)*/}
       <BrowserRouter>
         <Cabecalho />
 
+        {/* Switch: mecanismo para troca/alternância de rotas */}
         <Switch>
+          {/* Route: Configuração de cada rota (qual caminho, qual componente) */}
           <Route exact path="/">
             <Home />
           </Route>
 
+          {/* <Route path="/produtos" component={produto} /> */}
           <Route path="/produtos">
             <Produtos />
           </Route>
